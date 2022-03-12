@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bookshelf",
+    "\\bookshelf\\migrations",
+    "\\static",
+    "\\templates",
+    "\\web"
+  ],
+  "SelectedNode": "\\bookshelf\\views.py",
+  "PreviewInSolutionExplorer": false
+}
