@@ -91,3 +91,16 @@ def mt(request,id):
 def logoutpage(request):
     auth.logout(request)
     return redirect('index')
+
+def search_page(request):
+    if 'searching' in request.GET:
+        searching = request.GET['searching']
+        results = info.objects.filter(name__contains=searching)
+
+        return render(request,'search_page.html',
+                      {'searching':searching,
+                       'results':results})
+    else:
+        return render(request,'search_page.html')
+
+

@@ -9,5 +9,6 @@ urlpatterns = [
     path('team/',views.team,name='team'),
     path('mt/<int:id>/',views.mt,name='mt'),
     path('login/',views.loginpage,name='login'),
+    path('search_page/',views.search_page,name='search_page'),
     path('logout/',views.logoutpage,name='logout'),
     path('register/',views.register,name='register')]

@@ -34,7 +34,12 @@
         <header class="tm-site-header">
             <h1 class="tm-site-name">The Book Shelf</h1>
             <p class="tm-site-description">Your Online Bookstore</p>
-
+            <div id="gradient"></div>
+            <form class="searchbox" action="{% url 'search_page' %}">
+                {% csrf_token %}
+                <input name="searched" type="search" placeholder="Search Books" />
+                <button type="submit" value="search">Search</button>
+            </form>
             <nav class="navbar navbar-expand-md tm-main-nav-container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav" aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>

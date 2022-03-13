@@ -33,7 +33,12 @@
         <header class="tm-site-header">
             <h1 class="tm-site-name">The Book Shelf</h1>
             <p class="tm-site-description">Your Online Bookstore</p>
-
+            <div id="gradient"></div>
+            <form class="searchbox" action="{% url 'search_page' %}">
+                {% csrf_token %}
+                <input type="search" placeholder="Search Books" name="searching" />
+                <button type="submit" value="search">Search</button>
+            </form>
             <nav class="navbar navbar-expand-md tm-main-nav-container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tmMainNav" aria-controls="tmMainNav" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa fa-bars"></i>
@@ -133,9 +138,7 @@
 
                             <div class="ps">
                                 <span class="border"></span>
-                                <a href="#p1"><img src="{% static 'img/bg20.jpg' %}" alt=""></a><b><caption class="caps">Priyanka Kishor,</caption></b>
                                 <a href="#p2"><img src="{% static 'img/bg21.jpg' %}" alt=""></a><b><caption class="caps"> Rohit Saini,</caption></b>
-                                <a href="#p3"><img src="{% static 'img/bg22.jpg' %}" alt=""></a><b><caption class="caps"> Unnati Agarwal</caption></b>
                             </div>
                         </div>
                 </article>
