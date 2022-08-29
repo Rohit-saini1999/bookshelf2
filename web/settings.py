@@ -25,7 +25,7 @@ SECRET_KEY = '1wfo8#$p5=s1e4lhvt))(bg@#jzl05yk(+9c52lr030eo%ld&j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['bookshelf-pussgrc.herokuapp.com/']
 
 
 # Application definition
