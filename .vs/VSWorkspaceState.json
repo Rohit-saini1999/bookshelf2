@@ -4,6 +4,7 @@
     "\\bookshelf",
     "\\bookshelf\\migrations",
     "\\static",
+    "\\static\\css",
     "\\templates",
     "\\web"
   ],
