@@ -25,7 +25,7 @@ SECRET_KEY = '1wfo8#$p5=s1e4lhvt))(bg@#jzl05yk(+9c52lr030eo%ld&j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://bookshelf-pussgrc.herokuapp.com/']
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.sessions.middleware.SessionMihddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
